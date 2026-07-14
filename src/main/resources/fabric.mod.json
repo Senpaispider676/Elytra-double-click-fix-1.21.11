@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "elytrafilter",
+  "version": "${version}",
+  "name": "Elytra Click Filter",
+  "description": "Filters double-clicks when holding an Elytra.",
+  "authors": [
+    "Your Name"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.yourname.elytrafilter.ElytraFilterMod"
+    ]
+  },
+  "mixins": [
+    "elytrafilter.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "1.21.11",
+    "java": ">=21"
+  }
+}
