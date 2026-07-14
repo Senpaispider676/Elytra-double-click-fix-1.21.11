@@ -2,25 +2,27 @@
   "schemaVersion": 1,
   "id": "elytrafilter",
   "version": "${version}",
-  "name": "Elytra Click Filter",
-  "description": "Filters double-clicks when holding an Elytra.",
+  "name": "Elytra Filter",
+  "description": "A custom Elytra filter mod.",
   "authors": [
     "Your Name"
   ],
-  "contact": {},
+  "contact": {
+    "homepage": "https://yourwebsite.com",
+    "sources": "https://github.com/yourname/elytrafilter"
+  },
   "license": "MIT",
+  "icon": "assets/elytrafilter/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "com.yourname.elytrafilter.ElytraFilterMod"
+    "main": [
+      "com.yourname.elytrafilter.ElytraFilter"
     ]
   },
-  "mixins": [
-    "elytrafilter.mixins.json"
-  ],
   "depends": {
-    "fabricloader": ">=0.15.0",
-    "minecraft": "1.21.11",
-    "java": ">=21"
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
   }
 }
